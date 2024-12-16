@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/VictorBDias/mobile-tmp/blob/main/src/assets/intro.jpeg" alt="React" width="200">
+  <img src="https://github.com/VictorBDias/cinewinx-app/blob/main/src/assets/intro.jpeg" alt="React" width="200">
   <br>
     Template for modern mobile apps
   <br>
@@ -10,12 +10,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/victorbdias/mobile-tmp" alt="GitHub top language" >
-  <img src="https://img.shields.io/github/languages/count/victorbdias/mobile-tmp" alt="GitHub language count" >
-  <img src="https://img.shields.io/github/languages/code-size/victorbdias/mobile-tmp" alt="Repository size" >
-  <img src="https://img.shields.io/github/directory-file-count/victorbdias/mobile-tmp" alt="Files" >
-  <a href="https://github.com/VictorBDias/mobile-tmp/commits/main">
-    <img src="https://img.shields.io/github/last-commit/victorbdias/mobile-tmp" alt="GitHub last commit" >
+  <img src="https://img.shields.io/github/languages/top/victorbdias/cinewinx-app" alt="GitHub top language" >
+  <img src="https://img.shields.io/github/languages/count/victorbdias/cinewinx-app" alt="GitHub language count" >
+  <img src="https://img.shields.io/github/languages/code-size/victorbdias/cinewinx-app" alt="Repository size" >
+  <img src="https://img.shields.io/github/directory-file-count/victorbdias/cinewinx-app" alt="Files" >
+  <a href="https://github.com/VictorBDias/cinewinx-app/commits/main">
+    <img src="https://img.shields.io/github/last-commit/victorbdias/cinewinx-app" alt="GitHub last commit" >
     <img src="https://img.shields.io/badge/Created%20by-VictorBDias-blue" alt="VictorBDias" >
   </a>
 </p>

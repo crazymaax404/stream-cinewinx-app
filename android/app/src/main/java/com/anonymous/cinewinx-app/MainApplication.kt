@@ -1,4 +1,4 @@
-package com.anonymous.mobiletmp
+package com.anonymous.cinewinx-app
 
 import android.app.Application
 import android.content.res.Configuration

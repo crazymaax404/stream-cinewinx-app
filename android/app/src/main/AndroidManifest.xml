@@ -25,8 +25,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="mobile-tmp"/>
-        <data android:scheme="com.anonymous.mobiletmp"/>
+        <data android:scheme="cinewinx-app"/>
+        <data android:scheme="com.anonymous.cinewinx-app"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>

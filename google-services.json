@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "961483420752",
-    "project_id": "mobile-tmp",
-    "storage_bucket": "mobile-tmp.appspot.com"
+    "project_id": "cinewinx-app",
+    "storage_bucket": "cinewinx-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:961483420752:android:cc3d44ad6858b733368d55",
         "android_client_info": {
-          "package_name": "com.anonymous.mobiletmp"
+          "package_name": "com.anonymous.cinewinx-app"
         }
       },
       "oauth_client": [],

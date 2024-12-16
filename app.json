@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "mobile-tmp",
-    "slug": "mobile-tmp",
+    "name": "cinewinx-app",
+    "slug": "cinewinx-app",
     "jsEngine": "hermes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme": "mobile-tmp",
+    "scheme": "cinewinx-app",
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
@@ -21,7 +21,7 @@
     "ios": {
       "googleServicesFile": "./GoogleService-Info.plist",
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.mobiletmp",
+      "bundleIdentifier": "com.anonymous.cinewinx-app",
       "jsEngine": "jsc"
     },
     "android": {
@@ -30,7 +30,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.mobiletmp"
+      "package": "com.anonymous.cinewinx-app"
     },
     "web": {
       "favicon": "./assets/favicon.png"

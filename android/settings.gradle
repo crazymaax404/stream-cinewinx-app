@@ -1,4 +1,4 @@
-rootProject.name = 'mobile-tmp'
+rootProject.name = 'cinewinx-app'
 
 dependencyResolutionManagement {
   versionCatalogs {
