@@ -16,6 +16,7 @@ import { Icon } from '@components/atoms';
 import { spacings } from '@design/spacings';
 import { View } from 'react-native';
 import { colors } from '@design/colors';
+import MovieProvider from '@contexts/movie-provider';
 
 export default function RootLayout() {
   const queryClient = new QueryClient();
@@ -27,26 +28,28 @@ export default function RootLayout() {
         <I18nextProvider i18n={i18n}>
           <QueryClientProvider client={queryClient}>
             <AuthProvider>
-              <SafeAreaProvider>
-                <View
-                  style={{
-                    backgroundColor: colors.background,
-                    height: '100%',
-                    paddingTop: insets.top + spacings.regular,
-                  }}
-                >
-                  <Header
-                    content="Hello, @VictorBDias"
-                    avatar="https://i.pinimg.com/564x/ec/b3/d1/ecb3d1d08927b6cec14f34b4e3b19d2b.jpg"
-                    sideElements={<Icon name="bell" />}
+              <MovieProvider>
+                <SafeAreaProvider>
+                  <View
                     style={{
-                      paddingHorizontal: spacings.regular,
+                      backgroundColor: colors.background,
+                      height: '100%',
+                      paddingTop: insets.top + spacings.regular,
                     }}
-                  />
+                  >
+                    <Header
+                      content="Hello, @VictorBDias"
+                      avatar="https://i.pinimg.com/564x/ec/b3/d1/ecb3d1d08927b6cec14f34b4e3b19d2b.jpg"
+                      sideElements={<Icon name="bell" />}
+                      style={{
+                        paddingHorizontal: spacings.regular,
+                      }}
+                    />
 
-                  <Slot />
-                </View>
-              </SafeAreaProvider>
+                    <Slot />
+                  </View>
+                </SafeAreaProvider>
+              </MovieProvider>
             </AuthProvider>
           </QueryClientProvider>
         </I18nextProvider>
