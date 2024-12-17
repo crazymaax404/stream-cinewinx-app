@@ -2,13 +2,11 @@ import React from 'react';
 import { IPostCardProps } from './postCard.interface';
 import { Image, View } from 'tamagui';
 
-export const PostCard = ({
-  imageUrl,
-  ...rest
-}: IPostCardProps) => {
+export const PostCard = ({ imageUrl, onPress, ...rest }: IPostCardProps) => {
   return (
     <View
       borderWidth={1}
+      onPress={onPress}
       borderRadius={8}
       borderColor={'$borderColor'}
       {...rest}

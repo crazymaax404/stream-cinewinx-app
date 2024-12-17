@@ -11,7 +11,6 @@ export const usePosts = ({ params }) => {
           page: pageParam,
         };
         const response = await listPostsAPI(data);
-        console.log(response, 'response api');
         return response.data;
       } catch (error) {
         console.error(`posts - Error: `, error);

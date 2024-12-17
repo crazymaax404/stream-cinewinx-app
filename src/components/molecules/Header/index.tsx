@@ -13,7 +13,6 @@ export const Header = ({
 }: IHeaderProps) => {
   return (
     <XStack
-      backgroundColor={'$background'}
       justifyContent="space-between"
       alignItems="center"
       w="100%"

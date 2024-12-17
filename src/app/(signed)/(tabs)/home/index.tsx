@@ -4,29 +4,38 @@ import { PostCard } from '@components/molecules/PostCard';
 import { spacings } from '@design/spacings';
 import { usePosts } from '@hooks/use-posts';
 import { IPost } from '@interfaces/post.interfaces';
+import { router, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { XStack } from 'tamagui';
 
 export default function Home() {
   const { t } = useTranslation();
+  const router = useRouter();
   const { state, isLoading, error, refetch } = usePosts({
     params: { per_page: 10 },
   });
 
   console.log(state, 'state');
 
-  const renderPostItem = (data: IPost) => {
+  const handleNavigate = data => {
+    router.push({
+      pathname: '/home/post',
+      params: { data: JSON.stringify(data) },
+    });
+  };
 
+  const renderPostItem = (data: IPost) => {
     return (
       <PostCard
         imageUrl={data.image_url}
+        onPress={() => handleNavigate(data)}
         style={{ marginTop: spacings.regular }}
       />
     );
   };
 
   return (
-    <ScrollView onRefresh={refetch}>
+    <ScrollView onRefresh={refetch} style={{ marginTop: spacings.huge * 3 }}>
       <Typography variant="title" fontWeight="bold">
         {t('home:trending')}:
       </Typography>

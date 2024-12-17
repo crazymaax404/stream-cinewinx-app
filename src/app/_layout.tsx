@@ -31,7 +31,6 @@ export default function RootLayout() {
                   style={{
                     backgroundColor: colors.background,
                     height: '100%',
-                    paddingTop: insets.top + spacings.regular,
                   }}
                 >
                   <Header
@@ -39,6 +38,9 @@ export default function RootLayout() {
                     sideElements={<Icon name="search" />}
                     style={{
                       paddingHorizontal: spacings.regular,
+                      position: 'absolute',
+                      top: insets.top + spacings.small,
+                      zIndex: 1,
                     }}
                   />
 

@@ -39,6 +39,13 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
+        name="home/post"
+        options={{
+          href: null,
+        }}
+      />
+
+      <Tabs.Screen
         name="slug/[slug]"
         initialParams={{ slug: 'slug' }}
         options={{
