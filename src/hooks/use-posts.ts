@@ -21,7 +21,6 @@ export const usePosts = ({ params }) => {
     queryKey: ['posts'],
     initialPageParam: 1,
     getNextPageParam: (lastPage, allPages) => {
-      // Exemplo: Calcula o próximo pageParam
       return lastPage.length > 0 ? allPages.length + 1 : undefined;
     },
     networkMode: 'offlineFirst',
@@ -31,5 +30,7 @@ export const usePosts = ({ params }) => {
     retry: 2,
   });
 
-  return { data, isLoading, error, refetch };
+  const state = data?.pages.flatMap(page => page.data);
+
+  return { state, isLoading, error, refetch };
 };
