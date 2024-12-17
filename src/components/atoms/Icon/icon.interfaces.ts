@@ -1,12 +1,13 @@
 import { StyleProp, TextStyle } from 'react-native';
 
 export type IconNames =
-  | 'plus'
   | 'alert-circle'
   | 'bell'
+  | 'cat'
   | 'home'
-  | 'user'
-  | 'cat';
+  | 'plus'
+  | 'search'
+  | 'user';
 
 export interface IconProps {
   testID?: string;

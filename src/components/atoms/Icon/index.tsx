@@ -7,6 +7,7 @@ import {
   Home,
   User,
   Cat,
+  Search,
 } from '@tamagui/lucide-icons';
 
 export const Icon = ({ color, name, size = 20, style, testID }: IconProps) => {
@@ -25,6 +26,8 @@ export const Icon = ({ color, name, size = 20, style, testID }: IconProps) => {
       return <User {...props} />;
     case 'cat':
       return <Cat {...props} />;
+    case 'search':
+      return <Search {...props} />;
 
     default:
       return <AlertCircle {...props} />;
