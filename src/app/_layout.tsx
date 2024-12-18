@@ -1,4 +1,4 @@
-import { Slot } from 'expo-router';
+import { Slot, usePathname } from 'expo-router';
 import AuthProvider from '../contexts/auth-provider';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '@translations/i18n';
@@ -11,14 +11,16 @@ import {
 import ThemeProvider from '@contexts/theme-provider';
 import '../unistyles';
 import { Header } from '@components/molecules';
-import { Icon } from '@components/atoms';
 import { spacings } from '@design/spacings';
 import { View } from 'react-native';
 import { colors } from '@design/colors';
 import { QueryClientProvider } from '@contexts/query-client.context';
+import { getHeaderConfig } from '@utils/get-header-config';
 
 export default function RootLayout() {
   const insets = useSafeAreaInsets();
+  const pathname = usePathname();
+  const headerConfig = getHeaderConfig(pathname);
 
   return (
     <TamaguiProvider config={tamaguiConfig}>
@@ -34,8 +36,9 @@ export default function RootLayout() {
                   }}
                 >
                   <Header
-                    avatar="https://i.pinimg.com/564x/ec/b3/d1/ecb3d1d08927b6cec14f34b4e3b19d2b.jpg"
-                    sideElements={<Icon name="search" />}
+                    avatar={headerConfig.avatar}
+                    sideElements={headerConfig.sideElements}
+                    goBack={headerConfig.goBack}
                     style={{
                       paddingHorizontal: spacings.regular,
                       position: 'absolute',

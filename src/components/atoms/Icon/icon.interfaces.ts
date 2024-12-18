@@ -2,6 +2,7 @@ import { StyleProp, TextStyle } from 'react-native';
 
 export type IconNames =
   | 'alert-circle'
+  | 'arrow-left'
   | 'bell'
   | 'cat'
   | 'home'
