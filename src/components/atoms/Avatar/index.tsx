@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stack, Avatar as TamaguiAvatar } from 'tamagui';
 import { AvatarSize, IAvatarProps } from './avatar.interfaces';
 import { useTheme } from '@contexts/theme-provider';

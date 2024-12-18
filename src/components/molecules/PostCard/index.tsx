@@ -1,4 +1,3 @@
-import React from 'react';
 import { IPostCardProps } from './postCard.interface';
 import { Image, View } from 'tamagui';
 

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { RefreshControl, ScrollView as ReactScrollView } from 'react-native';
 
 import { ScrollViewProps } from './scrollView.interfaces';

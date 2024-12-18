@@ -1,4 +1,3 @@
-import React from 'react';
 import { IHeaderProps } from './header.interface';
 import { XStack } from 'tamagui';
 import { Avatar, Button, Icon } from '@components/atoms';
