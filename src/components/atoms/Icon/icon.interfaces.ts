@@ -6,6 +6,7 @@ export type IconNames =
   | 'bell'
   | 'cat'
   | 'home'
+  | 'play'
   | 'plus'
   | 'search'
   | 'user';

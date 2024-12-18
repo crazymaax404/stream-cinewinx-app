@@ -17,7 +17,7 @@ export default function Home() {
 
   console.log(state, 'state');
 
-  const handleNavigate = data => {
+  const handleNavigate = (data: IPost) => {
     router.push({
       pathname: '/home/post',
       params: { data: JSON.stringify(data) },

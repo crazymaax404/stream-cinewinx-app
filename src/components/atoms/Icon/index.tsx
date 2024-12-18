@@ -9,6 +9,7 @@ import {
   Cat,
   Search,
   ArrowLeft,
+  Play,
 } from '@tamagui/lucide-icons';
 
 export const Icon = ({ color, name, size = 20, style, testID }: IconProps) => {
@@ -31,6 +32,8 @@ export const Icon = ({ color, name, size = 20, style, testID }: IconProps) => {
       return <ArrowLeft {...props} />;
     case 'search':
       return <Search {...props} />;
+    case 'play':
+      return <Play {...props} />;
 
     default:
       return <AlertCircle {...props} />;

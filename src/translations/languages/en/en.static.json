@@ -25,5 +25,7 @@
   "searchNotFound": "result not found",
   "cancel": "cancel",
   "add": "add",
-  "confirm": "confirm"
+  "confirm": "confirm",
+  "cast": "Cast",
+  "watch": "Watch"
 }
